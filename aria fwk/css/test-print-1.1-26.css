@@ -1,0 +1,4 @@
+/**
+ * Copyright Amadeus
+ */
+html,body{overflow:visible;width:auto!important;height:auto!important;}.xPrintAdaptX{overflow-x:visible;width:auto!important;}.xPrintAdaptY{overflow-y:visible;height:auto!important;}.xPrintAdaptX,.xPrintAdaptY{display:block;position:static;}.xPrintAdaptX.xPrintAdaptY{overflow:visible;}.xWidget.xPrintHide{display:none;}

@@ -1,0 +1,11 @@
+/**
+ * Copyright Amadeus
+ */
+{TextTemplate {$classpath: 'aria.ext.filesgenerator.tpl.TemplateScript'}}
+{macro main()}Aria.tplScriptDefinition(\{
+	\$classpath : "${data.$classpath}",
+	\$prototype : \{	   
+			showAlert: function() \{\}
+	\}
+\});{/macro}
+{/TextTemplate}

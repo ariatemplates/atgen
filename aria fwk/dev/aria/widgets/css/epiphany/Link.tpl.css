@@ -1,0 +1,38 @@
+/**
+ * Copyright Amadeus
+ */
+{CSSTemplate {
+	$classpath : "aria.widgets.css.epiphany.Link"
+}}
+
+{macro main()}
+
+
+
+a.xLink_std {
+	color:#6365FF;
+}	
+
+a:hover.xLink_std {
+	color:#6365FF;
+}	
+
+a:focus.xLink_std {
+	color:#6365FF;
+}	
+
+a.xLink_multiSelectFooter {
+	color:#000;
+}	
+
+a:hover.xLink_multiSelectFooter {
+	color:#000;
+}	
+
+a:focus.xLink_multiSelectFooter {
+	color:#000;
+}	
+
+
+{/macro}
+{/CSSTemplate}

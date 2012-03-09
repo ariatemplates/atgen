@@ -1,0 +1,181 @@
+/**
+ * Copyright Amadeus
+ */
+
+
+{CSSTemplate {
+	$classpath : "aria.widgets.css.epiphany.SelectBox"
+}}
+
+{macro main()}
+
+			
+.xSelectBox_simple_normal_label {
+	font-weight: normal
+}
+.xSelectBox_simple_normalFocused_label {
+	font-weight: normal
+}
+.xSelectBox_simple_mandatory_label {
+	font-weight: normal
+}
+.xSelectBox_simple_mandatoryFocused_label {
+	font-weight: normal
+}
+.xSelectBox_simple_normalError_label {
+	font-weight: normal
+}
+.xSelectBox_simple_normalErrorFocused_label {
+	font-weight: normal
+}
+.xSelectBox_simple_mandatoryError_label {
+	font-weight: normal
+}
+.xSelectBox_simple_mandatoryErrorFocused_label {
+	font-weight: normal
+}
+.xSelectBox_simple_disabled_label {
+	font-weight: normal
+}
+.xSelectBox_simple_readOnly_label {
+	font-weight: normal
+}
+.xSelectBox_simple_prefill_label {
+	font-weight: normal
+}
+			
+
+	.xSelectBox_std_normal_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xSelectBox_std_normal_label {
+	font-weight: normal
+}
+
+	.xSelectBox_std_normalFocused_frame  {
+		border: 1px solid #000000;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xSelectBox_std_normalFocused_label {
+	font-weight: normal
+}
+
+	.xSelectBox_std_mandatory_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xSelectBox_std_mandatory_label {
+	font-weight: normal
+}
+
+	.xSelectBox_std_mandatoryFocused_frame  {
+		border: 1px solid #000000;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xSelectBox_std_mandatoryFocused_label {
+	font-weight: normal
+}
+
+	.xSelectBox_std_normalError_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xSelectBox_std_normalError_label {
+	font-weight: normal
+}
+
+	.xSelectBox_std_normalErrorFocused_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xSelectBox_std_normalErrorFocused_label {
+	font-weight: normal
+}
+
+	.xSelectBox_std_mandatoryError_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xSelectBox_std_mandatoryError_label {
+	font-weight: normal
+}
+
+	.xSelectBox_std_mandatoryErrorFocused_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xSelectBox_std_mandatoryErrorFocused_label {
+	font-weight: normal
+}
+
+	.xSelectBox_std_disabled_frame  {
+		border: 1px solid #E6D9C6;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFBF1;
+		color: #AB9B85;
+		vertical-align: top;
+	}
+.xSelectBox_std_disabled_label {
+	font-weight: normal
+}
+
+	.xSelectBox_std_readOnly_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFBF1;
+		color: #000000;
+		vertical-align: top;
+	}
+.xSelectBox_std_readOnly_label {
+	font-weight: normal
+}
+
+	.xSelectBox_std_prefill_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: gray;
+		vertical-align: top;
+	}
+.xSelectBox_std_prefill_label {
+	font-weight: normal
+}
+
+{/macro}
+{/CSSTemplate}

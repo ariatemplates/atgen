@@ -1,0 +1,411 @@
+/**
+ * Copyright Amadeus
+ */
+
+
+{CSSTemplate {
+	$classpath : "aria.widgets.css.iphone.Textarea"
+}}
+
+{macro main()}
+
+			
+
+.xTextarea_std_normal_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normal_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normal_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normal_c {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+}
+.xTextarea_std_normal_m {
+	background-color: #FFFFFF
+}
+.xTextarea_std_normal_tlc {width:4px; height:6px; background-position:0 0px;}
+.xTextarea_std_normal_ts {height:6px; background-position:0 0px; }
+.xTextarea_std_normal_trc {width:4px; height:6px; background-position: -4px 0px;}
+.xTextarea_std_normal_rs {width:4px; background-position:-4px 0;}
+.xTextarea_std_normal_brc {width:4px; height:6px; background-position: -4px -6px;}
+.xTextarea_std_normal_bs {height: 6px; background-position:0 -6px;}
+.xTextarea_std_normal_blc {width:4px; height:6px; background-position: 0 -6px;}
+.xTextarea_std_normal_ls {width: 4px; background-position:0px 0;}
+.xTextarea_std_normal_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_normal_label {
+	font-weight: normal
+}
+
+.xTextarea_std_normalFocused_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normalFocused_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normalFocused_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normalFocused_c {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+}
+.xTextarea_std_normalFocused_m {
+	background-color: #FFFFFF
+}
+.xTextarea_std_normalFocused_tlc {width:4px; height:6px; background-position:0 -14px;}
+.xTextarea_std_normalFocused_ts {height:6px; background-position:0 -14px; }
+.xTextarea_std_normalFocused_trc {width:4px; height:6px; background-position: -4px -14px;}
+.xTextarea_std_normalFocused_rs {width:4px; background-position:-14px 0;}
+.xTextarea_std_normalFocused_brc {width:4px; height:6px; background-position: -4px -20px;}
+.xTextarea_std_normalFocused_bs {height: 6px; background-position:0 -20px;}
+.xTextarea_std_normalFocused_blc {width:4px; height:6px; background-position: 0 -20px;}
+.xTextarea_std_normalFocused_ls {width: 4px; background-position:-10px 0;}
+.xTextarea_std_normalFocused_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_normalFocused_label {
+	font-weight: normal
+}
+
+.xTextarea_std_mandatory_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatory_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatory_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatory_c {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+}
+.xTextarea_std_mandatory_m {
+	background-color: #FFE6AB
+}
+.xTextarea_std_mandatory_tlc {width:4px; height:6px; background-position:0 -42px;}
+.xTextarea_std_mandatory_ts {height:6px; background-position:0 -42px; }
+.xTextarea_std_mandatory_trc {width:4px; height:6px; background-position: -4px -42px;}
+.xTextarea_std_mandatory_rs {width:4px; background-position:-34px 0;}
+.xTextarea_std_mandatory_brc {width:4px; height:6px; background-position: -4px -48px;}
+.xTextarea_std_mandatory_bs {height: 6px; background-position:0 -48px;}
+.xTextarea_std_mandatory_blc {width:4px; height:6px; background-position: 0 -48px;}
+.xTextarea_std_mandatory_ls {width: 4px; background-position:-30px 0;}
+.xTextarea_std_mandatory_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_mandatory_label {
+	font-weight: normal
+}
+
+.xTextarea_std_mandatoryFocused_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatoryFocused_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatoryFocused_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatoryFocused_c {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+}
+.xTextarea_std_mandatoryFocused_m {
+	background-color: #FFE6AB
+}
+.xTextarea_std_mandatoryFocused_tlc {width:4px; height:6px; background-position:0 -56px;}
+.xTextarea_std_mandatoryFocused_ts {height:6px; background-position:0 -56px; }
+.xTextarea_std_mandatoryFocused_trc {width:4px; height:6px; background-position: -4px -56px;}
+.xTextarea_std_mandatoryFocused_rs {width:4px; background-position:-44px 0;}
+.xTextarea_std_mandatoryFocused_brc {width:4px; height:6px; background-position: -4px -62px;}
+.xTextarea_std_mandatoryFocused_bs {height: 6px; background-position:0 -62px;}
+.xTextarea_std_mandatoryFocused_blc {width:4px; height:6px; background-position: 0 -62px;}
+.xTextarea_std_mandatoryFocused_ls {width: 4px; background-position:-40px 0;}
+.xTextarea_std_mandatoryFocused_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_mandatoryFocused_label {
+	font-weight: normal
+}
+
+.xTextarea_std_normalError_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normalError_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normalError_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normalError_c {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+}
+.xTextarea_std_normalError_m {
+	background-color: #FFFFFF
+}
+.xTextarea_std_normalError_tlc {width:4px; height:6px; background-position:0 -84px;}
+.xTextarea_std_normalError_ts {height:6px; background-position:0 -84px; }
+.xTextarea_std_normalError_trc {width:4px; height:6px; background-position: -4px -84px;}
+.xTextarea_std_normalError_rs {width:4px; background-position:-64px 0;}
+.xTextarea_std_normalError_brc {width:4px; height:6px; background-position: -4px -90px;}
+.xTextarea_std_normalError_bs {height: 6px; background-position:0 -90px;}
+.xTextarea_std_normalError_blc {width:4px; height:6px; background-position: 0 -90px;}
+.xTextarea_std_normalError_ls {width: 4px; background-position:-60px 0;}
+.xTextarea_std_normalError_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_normalError_label {
+	font-weight: normal
+}
+
+.xTextarea_std_normalErrorFocused_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normalErrorFocused_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normalErrorFocused_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_normalErrorFocused_c {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+}
+.xTextarea_std_normalErrorFocused_m {
+	background-color: #FFFFFF
+}
+.xTextarea_std_normalErrorFocused_tlc {width:4px; height:6px; background-position:0 -84px;}
+.xTextarea_std_normalErrorFocused_ts {height:6px; background-position:0 -84px; }
+.xTextarea_std_normalErrorFocused_trc {width:4px; height:6px; background-position: -4px -84px;}
+.xTextarea_std_normalErrorFocused_rs {width:4px; background-position:-64px 0;}
+.xTextarea_std_normalErrorFocused_brc {width:4px; height:6px; background-position: -4px -90px;}
+.xTextarea_std_normalErrorFocused_bs {height: 6px; background-position:0 -90px;}
+.xTextarea_std_normalErrorFocused_blc {width:4px; height:6px; background-position: 0 -90px;}
+.xTextarea_std_normalErrorFocused_ls {width: 4px; background-position:-60px 0;}
+.xTextarea_std_normalErrorFocused_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_normalErrorFocused_label {
+	font-weight: normal
+}
+
+.xTextarea_std_mandatoryError_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatoryError_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatoryError_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatoryError_c {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+}
+.xTextarea_std_mandatoryError_m {
+	background-color: #FFE6AB
+}
+.xTextarea_std_mandatoryError_tlc {width:4px; height:6px; background-position:0 -70px;}
+.xTextarea_std_mandatoryError_ts {height:6px; background-position:0 -70px; }
+.xTextarea_std_mandatoryError_trc {width:4px; height:6px; background-position: -4px -70px;}
+.xTextarea_std_mandatoryError_rs {width:4px; background-position:-54px 0;}
+.xTextarea_std_mandatoryError_brc {width:4px; height:6px; background-position: -4px -76px;}
+.xTextarea_std_mandatoryError_bs {height: 6px; background-position:0 -76px;}
+.xTextarea_std_mandatoryError_blc {width:4px; height:6px; background-position: 0 -76px;}
+.xTextarea_std_mandatoryError_ls {width: 4px; background-position:-50px 0;}
+.xTextarea_std_mandatoryError_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_mandatoryError_label {
+	font-weight: normal
+}
+
+.xTextarea_std_mandatoryErrorFocused_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatoryErrorFocused_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatoryErrorFocused_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_mandatoryErrorFocused_c {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+}
+.xTextarea_std_mandatoryErrorFocused_m {
+	background-color: #FFE6AB
+}
+.xTextarea_std_mandatoryErrorFocused_tlc {width:4px; height:6px; background-position:0 -70px;}
+.xTextarea_std_mandatoryErrorFocused_ts {height:6px; background-position:0 -70px; }
+.xTextarea_std_mandatoryErrorFocused_trc {width:4px; height:6px; background-position: -4px -70px;}
+.xTextarea_std_mandatoryErrorFocused_rs {width:4px; background-position:-54px 0;}
+.xTextarea_std_mandatoryErrorFocused_brc {width:4px; height:6px; background-position: -4px -76px;}
+.xTextarea_std_mandatoryErrorFocused_bs {height: 6px; background-position:0 -76px;}
+.xTextarea_std_mandatoryErrorFocused_blc {width:4px; height:6px; background-position: 0 -76px;}
+.xTextarea_std_mandatoryErrorFocused_ls {width: 4px; background-position:-50px 0;}
+.xTextarea_std_mandatoryErrorFocused_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_mandatoryErrorFocused_label {
+	font-weight: normal
+}
+
+.xTextarea_std_disabled_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_disabled_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_disabled_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_disabled_c {
+	margin: 0px 0px 0px 0px;
+	color: #E6D9C6;
+}
+.xTextarea_std_disabled_m {
+	background-color: #FFFFFF
+}
+.xTextarea_std_disabled_tlc {width:4px; height:6px; background-position:0 -28px;}
+.xTextarea_std_disabled_ts {height:6px; background-position:0 -28px; }
+.xTextarea_std_disabled_trc {width:4px; height:6px; background-position: -4px -28px;}
+.xTextarea_std_disabled_rs {width:4px; background-position:-24px 0;}
+.xTextarea_std_disabled_brc {width:4px; height:6px; background-position: -4px -34px;}
+.xTextarea_std_disabled_bs {height: 6px; background-position:0 -34px;}
+.xTextarea_std_disabled_blc {width:4px; height:6px; background-position: 0 -34px;}
+.xTextarea_std_disabled_ls {width: 4px; background-position:-20px 0;}
+.xTextarea_std_disabled_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_disabled_label {
+	font-weight: normal
+}
+
+.xTextarea_std_readOnly_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_readOnly_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_readOnly_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_readOnly_c {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+}
+.xTextarea_std_readOnly_m {
+	background-color: #FFFFFF
+}
+.xTextarea_std_readOnly_tlc {width:4px; height:6px; background-position:0 -28px;}
+.xTextarea_std_readOnly_ts {height:6px; background-position:0 -28px; }
+.xTextarea_std_readOnly_trc {width:4px; height:6px; background-position: -4px -28px;}
+.xTextarea_std_readOnly_rs {width:4px; background-position:-24px 0;}
+.xTextarea_std_readOnly_brc {width:4px; height:6px; background-position: -4px -34px;}
+.xTextarea_std_readOnly_bs {height: 6px; background-position:0 -34px;}
+.xTextarea_std_readOnly_blc {width:4px; height:6px; background-position: 0 -34px;}
+.xTextarea_std_readOnly_ls {width: 4px; background-position:-20px 0;}
+.xTextarea_std_readOnly_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_readOnly_label {
+	font-weight: normal
+}
+
+.xTextarea_std_prefill_bkgA {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea.gif","no-repeat scroll 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_prefill_bkgB {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_v.gif","repeat-x 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_prefill_bkgC {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/textarea_h.gif","repeat-y 0 0")}
+	font-size:1px;
+}
+.xTextarea_std_prefill_c {
+	margin: 0px 0px 0px 0px;
+	color: #000;
+}
+.xTextarea_std_prefill_m {
+	background-color: #FFFFFF
+}
+.xTextarea_std_prefill_tlc {width:4px; height:6px; background-position:0 0px;}
+.xTextarea_std_prefill_ts {height:6px; background-position:0 0px; }
+.xTextarea_std_prefill_trc {width:4px; height:6px; background-position: -4px 0px;}
+.xTextarea_std_prefill_rs {width:4px; background-position:-4px 0;}
+.xTextarea_std_prefill_brc {width:4px; height:6px; background-position: -4px -6px;}
+.xTextarea_std_prefill_bs {height: 6px; background-position:0 -6px;}
+.xTextarea_std_prefill_blc {width:4px; height:6px; background-position: 0 -6px;}
+.xTextarea_std_prefill_ls {width: 4px; background-position:0px 0;}
+.xTextarea_std_prefill_frameIcon {
+		display: block;
+		height:px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat left")}
+}
+.xTextarea_std_prefill_label {
+	font-weight: normal
+}
+
+{/macro}
+{/CSSTemplate}

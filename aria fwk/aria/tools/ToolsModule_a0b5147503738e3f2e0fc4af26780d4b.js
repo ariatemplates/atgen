@@ -1,0 +1,5 @@
+/*
+ * Copyright Amadeus
+ */
+Aria.classDefinition({$classpath:"aria.tools.ToolsModule",$extends:"aria.templates.ModuleCtrl",$implements:["aria.tools.IToolsModule"],$constructor:function(){this.subModulesList=[{refpath:"inspector",classpath:"aria.tools.inspector.InspectorModule",display:"aria.tools.inspector.InspectorDisplay"},{refpath:"logger",classpath:"aria.tools.logger.LoggerModule",display:"aria.tools.logger.LoggerDisplay"}];this.bridge=null;this.$ModuleCtrl.constructor.call(this)},$prototype:{$publicInterfaceName:"aria.tools.IToolsModule",
+init:function(b,c){this.bridge=b.bridge;for(var a=0,d=this.subModulesList.length;a<d;a++)if(!this.subModulesList[a].initArgs){this.subModulesList[a].initArgs={};this.subModulesList[a].initArgs.bridge=this.bridge}this.loadSubModules(this.subModulesList,{fn:this.onSubModulesReady,scope:this});this.$ModuleCtrl.init.call(this,b,c)},onSubModulesReady:function(){this.$raiseEvent("modulesReady")},onSubModuleEvent:function(){}}});

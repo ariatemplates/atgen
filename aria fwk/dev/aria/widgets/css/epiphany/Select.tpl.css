@@ -1,0 +1,22 @@
+/**
+ * Copyright Amadeus
+ */
+
+
+{CSSTemplate {
+	$classpath : "aria.widgets.css.epiphany.Select"
+}}
+
+{macro main()}
+
+.xSelect {
+	font-size: 11px;
+	font-family: tahoma,arial,helvetica,sans-serif;
+	display:inline-block;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+
+{/macro}
+{/CSSTemplate}

@@ -1,0 +1,364 @@
+/**
+ * Copyright Amadeus
+ */
+
+
+{CSSTemplate {
+	$classpath : "aria.widgets.css.epiphany.TextInput"
+}}
+
+{macro main()}
+
+			
+/* TextInput class: simpleIcon */
+.xTINbkg_simpleIcon {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat top left")}
+}
+.xTextInput_simpleIcon_normal_label {
+	font-weight: normal
+}
+.xTextInput_simpleIcon_normalFocused_label {
+	font-weight: normal
+}
+.xTextInput_simpleIcon_mandatory_label {
+	font-weight: normal
+}
+.xTextInput_simpleIcon_mandatoryFocused_label {
+	font-weight: normal
+}
+.xTextInput_simpleIcon_normalError_label {
+	font-weight: normal
+}
+.xTextInput_simpleIcon_normalErrorFocused_label {
+	font-weight: normal
+}
+.xTextInput_simpleIcon_mandatoryError_label {
+	font-weight: normal
+}
+.xTextInput_simpleIcon_mandatoryErrorFocused_label {
+	font-weight: normal
+}
+.xTextInput_simpleIcon_disabled_label {
+	font-weight: normal
+}
+.xTextInput_simpleIcon_readOnly_label {
+	font-weight: normal
+}
+.xTextInput_simpleIcon_prefill_label {
+	font-weight: normal
+}
+			
+/* TextInput class: important */
+.xTINbkg_important {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat top left")}
+}
+
+	.xTextInput_important_normal_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_important_normal_label {
+	font-weight: bold
+}
+
+	.xTextInput_important_normalFocused_frame  {
+		border: 1px solid #000000;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_important_normalFocused_label {
+	font-weight: bold
+}
+
+	.xTextInput_important_mandatory_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_important_mandatory_label {
+	font-weight: bold
+}
+
+	.xTextInput_important_mandatoryFocused_frame  {
+		border: 1px solid #000000;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_important_mandatoryFocused_label {
+	font-weight: bold
+}
+
+	.xTextInput_important_normalError_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_important_normalError_label {
+	font-weight: bold
+}
+
+	.xTextInput_important_normalErrorFocused_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_important_normalErrorFocused_label {
+	font-weight: bold
+}
+
+	.xTextInput_important_mandatoryError_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_important_mandatoryError_label {
+	font-weight: bold
+}
+
+	.xTextInput_important_mandatoryErrorFocused_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_important_mandatoryErrorFocused_label {
+	font-weight: bold
+}
+
+	.xTextInput_important_disabled_frame  {
+		border: 1px solid #E6D9C6;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFBF1;
+		color: #AB9B85;
+		vertical-align: top;
+	}
+.xTextInput_important_disabled_label {
+	font-weight: bold
+}
+
+	.xTextInput_important_readOnly_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFBF1;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_important_readOnly_label {
+	font-weight: bold
+}
+
+	.xTextInput_important_prefill_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: gray;
+		vertical-align: top;
+	}
+.xTextInput_important_prefill_label {
+	font-weight: bold
+}
+			
+/* TextInput class: simple */
+.xTINbkg_simple {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat top left")}
+}
+.xTextInput_simple_normal_label {
+	font-weight: normal
+}
+.xTextInput_simple_normalFocused_label {
+	font-weight: normal
+}
+.xTextInput_simple_mandatory_label {
+	font-weight: normal
+}
+.xTextInput_simple_mandatoryFocused_label {
+	font-weight: normal
+}
+.xTextInput_simple_normalError_label {
+	font-weight: normal
+}
+.xTextInput_simple_normalErrorFocused_label {
+	font-weight: normal
+}
+.xTextInput_simple_mandatoryError_label {
+	font-weight: normal
+}
+.xTextInput_simple_mandatoryErrorFocused_label {
+	font-weight: normal
+}
+.xTextInput_simple_disabled_label {
+	font-weight: normal
+}
+.xTextInput_simple_readOnly_label {
+	font-weight: normal
+}
+.xTextInput_simple_prefill_label {
+	font-weight: normal
+}
+			
+/* TextInput class: std */
+.xTINbkg_std {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","","no-repeat top left")}
+}
+
+	.xTextInput_std_normal_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_std_normal_label {
+	font-weight: normal
+}
+
+	.xTextInput_std_normalFocused_frame  {
+		border: 1px solid #000000;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_std_normalFocused_label {
+	font-weight: normal
+}
+
+	.xTextInput_std_mandatory_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_std_mandatory_label {
+	font-weight: normal
+}
+
+	.xTextInput_std_mandatoryFocused_frame  {
+		border: 1px solid #000000;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_std_mandatoryFocused_label {
+	font-weight: normal
+}
+
+	.xTextInput_std_normalError_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_std_normalError_label {
+	font-weight: normal
+}
+
+	.xTextInput_std_normalErrorFocused_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_std_normalErrorFocused_label {
+	font-weight: normal
+}
+
+	.xTextInput_std_mandatoryError_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_std_mandatoryError_label {
+	font-weight: normal
+}
+
+	.xTextInput_std_mandatoryErrorFocused_frame  {
+		border: 1px dashed #FF0033;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFCC;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_std_mandatoryErrorFocused_label {
+	font-weight: normal
+}
+
+	.xTextInput_std_disabled_frame  {
+		border: 1px solid #E6D9C6;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFBF1;
+		color: #AB9B85;
+		vertical-align: top;
+	}
+.xTextInput_std_disabled_label {
+	font-weight: normal
+}
+
+	.xTextInput_std_readOnly_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFBF1;
+		color: #000000;
+		vertical-align: top;
+	}
+.xTextInput_std_readOnly_label {
+	font-weight: normal
+}
+
+	.xTextInput_std_prefill_frame  {
+		border: 1px solid #AB9B85;
+		padding: 1px 0px 1px 0px;
+		*padding-top: 0px;
+		background-color: #FFFFFF;
+		color: gray;
+		vertical-align: top;
+	}
+.xTextInput_std_prefill_label {
+	font-weight: normal
+}
+
+{/macro}
+{/CSSTemplate}

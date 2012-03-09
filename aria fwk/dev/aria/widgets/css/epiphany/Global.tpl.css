@@ -1,0 +1,168 @@
+/**
+ * Copyright Amadeus
+ */
+
+{CSSTemplate {
+	$classpath : "aria.widgets.css.epiphany.Global",
+	$dependencies : ["aria.widgets.environment.WidgetSettings"]
+}}
+
+{macro main()}
+
+/* Skin: epiphany */
+/* Note: all private classes start with 'x' - these classes must not be used in application pages as they can change when new features are implemented */
+
+/* Global classes */
+body, textarea, select, input, button, table {
+  font-size: 11px;
+  font-family: tahoma,arial,helvetica,sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  cursor:default;
+  background-color: #FFFBF1;
+}
+
+.xLDI-text {
+  position: relative;
+  top: 50%;
+  display:block;
+  text-align:center;
+  padding-top:
+  20px;
+}
+
+.xLDI {
+	${aria.widgets.AriaSkinInterface.backgroundMacro("#fff","atdefskin/imgs/loading.gif","no-repeat center center")}
+  filter: alpha(opacity=80);
+  -moz-opacity: .80;
+  opacity: .80;
+}
+
+.xOverlay {
+  background-color: #FFFBF1;
+  filter: alpha(opacity=50);
+  -moz-opacity: .50;
+  opacity: .50;
+  border: 1px solid #ACA899;
+}
+
+a {
+  color: #6365FF;
+  text-decoration: none;
+}
+a:link {
+  color: #6365FF;
+  text-decoration: none;
+}
+a:visited {
+  color: #6365FF;
+  text-decoration: none;
+}
+a:hover {
+  color: #6365FF;
+  text-decoration: underline;
+}
+
+ul, li {list-style-type: none;}
+
+/* Hide input focus on safari*/
+{if aria.core.Browser.isSafari || aria.core.Browser.isChrome}
+*:focus {
+  outline: 0;
+}
+{/if}
+
+a:focus {
+  color: #6365FF;
+  outline: #000 dotted 1px;
+}
+
+
+/*AT Widget wrapper DOMElm */
+{var widgetSettings = aria.widgets.environment.WidgetSettings.getWidgetSettings() /}
+.xWidget {
+  position: relative;
+  display: inline-block;
+  {if widgetSettings.middleAlignment}vertical-align: middle;{/if}
+}
+
+.xWidget.xBlock, .xBlock {
+  display: block;
+}
+
+.xOverflowAuto {
+  overflow: auto;
+}
+
+.xOverflowHidden {
+  overflow: hidden;
+}
+
+.xOverflowXAuto {
+  overflow-x: auto;
+}
+
+.xOverflowYAuto {
+  overflow-y: auto;
+}
+
+.xOverflowXHidden {
+  overflow-x: hidden;
+}
+
+.xOverflowYHidden {
+  overflow-y: hidden;
+}
+
+/* template div container style */
+.xTplContent {
+}
+
+/* Mask for modal dialogs */
+.xDialogMask {
+  /* width and height are required for IE6 to work correctly */
+  width:100%;
+  height:100%;
+  background-color: black;
+  filter: alpha(opacity=40);
+  -moz-opacity: .40;
+  opacity: .40;
+}
+
+/* CSS Filter, targets IE7 & IE6 only */
+{if aria.core.Browser.isIE7}
+	input {margin-top: -1px !important;}
+{elseif aria.core.Browser.isIE6 /}
+  input {margin-top: -1px !important;}
+{/if}
+
+/* Frames and abstract classes */
+.xFrameContent {
+	display: inline-block;
+	position:relative;
+	padding: 0 0 0 0 !important;
+	border: 0 0 0 0 !important;
+}
+
+{/* widgetSettings is defined in Global.tpl.css.ftl */}
+.xFixedHeightFrame_w {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	vertical-align: {if widgetSettings.middleAlignment}middle{else/}top{/if};
+}
+.xFixedHeightFrame_bme {
+	display: inline-block; 
+	vertical-align: {if widgetSettings.middleAlignment}middle{else/}top{/if}; 
+}
+
+.xSimpleFrame {
+	display: inline-block;
+	position: relative;
+}
+
+
+{/macro}
+{/CSSTemplate}

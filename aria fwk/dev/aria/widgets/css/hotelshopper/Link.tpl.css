@@ -1,0 +1,26 @@
+/**
+ * Copyright Amadeus
+ */
+{CSSTemplate {
+	$classpath : "aria.widgets.css.hotelshopper.Link"
+}}
+
+{macro main()}
+
+
+
+a.xLink_std {
+	color:#6365FF;
+}	
+
+a:hover.xLink_std {
+	color:#6365FF;
+}	
+
+a:focus.xLink_std {
+	color:#6365FF;
+}	
+
+
+{/macro}
+{/CSSTemplate}

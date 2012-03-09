@@ -1,0 +1,84 @@
+/**
+ * Copyright Amadeus
+ */
+
+
+{CSSTemplate {
+	$classpath : "aria.widgets.css.epiphany.Icon",
+	$dependencies : ["aria.widgets.environment.WidgetSettings"]
+}}
+
+{macro main()}
+
+{var widgetSettings = aria.widgets.environment.WidgetSettings.getWidgetSettings() /}
+/* Icon class: std8x8 */
+.xICNstd8x8 {
+	{if !widgetSettings.middleAlignment}vertical-align:top;{/if}
+	font-size:1px;
+	width:8px;
+	height:8px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","epiphany/sprites/icons_8x8.gif","no-repeat top left")}
+}
+
+/* Icon class: datepicker */
+.xICNdatepicker {
+	{if !widgetSettings.middleAlignment}vertical-align:top;{/if}
+	font-size:1px;
+	width:16px;
+	height:17px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","epiphany/imgs/datePicker.gif","no-repeat top left")}
+}
+
+/* Icon class: autoCompleteAirTrain */
+.xICNautoCompleteAirTrain {
+	{if !widgetSettings.middleAlignment}vertical-align:top;{/if}
+	font-size:1px;
+	width:16px;
+	height:16px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","epiphany/sprites/airtrainicons_16x16.gif","no-repeat top left")}
+}
+
+/* Icon class: checkBoxes */
+.xICNcheckBoxes {
+	{if !widgetSettings.middleAlignment}vertical-align:top;{/if}
+	font-size:1px;
+	width:14px;
+	height:16px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","epiphany/sprites/checkbox.png","no-repeat top left")}
+}
+
+{if !widgetSettings.middleAlignment}
+.xICNcheckBoxes {
+	vertical-align:middle;	
+}
+{/if}
+/* Icon class: std */
+.xICNstd {
+	{if !widgetSettings.middleAlignment}vertical-align:top;{/if}
+	font-size:1px;
+	width:16px;
+	height:16px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","epiphany/sprites/icons_16x16new.gif","no-repeat top left")}
+}
+
+/* Icon class: dropdown */
+.xICNdropdown {
+	{if !widgetSettings.middleAlignment}vertical-align:top;{/if}
+	font-size:1px;
+	width:16px;
+	height:17px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","epiphany/imgs/dropdownbtns.gif","no-repeat top left")}
+}
+
+/* Icon class: sortIndicator */
+.xICNsortIndicator {
+	{if !widgetSettings.middleAlignment}vertical-align:top;{/if}
+	font-size:1px;
+	width:15px;
+	height:11px;
+	${aria.widgets.AriaSkinInterface.backgroundMacro("","epiphany/sprites/sortlist.gif","no-repeat top left")}
+}
+
+
+{/macro}
+{/CSSTemplate}

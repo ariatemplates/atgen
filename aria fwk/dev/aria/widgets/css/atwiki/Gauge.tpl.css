@@ -1,0 +1,18 @@
+/**
+ * Copyright Amadeus
+ */
+
+
+{CSSTemplate {
+	$classpath : "aria.widgets.css.atwiki.Gauge"
+}}
+
+{macro main()}
+
+/* Gauge classes */
+.xGAUGE_progress_std{
+	${aria.widgets.AriaSkinInterface.backgroundMacro("transparent","atdefskin/sprites/back.gif","repeat-x")}
+}
+
+{/macro}
+{/CSSTemplate}

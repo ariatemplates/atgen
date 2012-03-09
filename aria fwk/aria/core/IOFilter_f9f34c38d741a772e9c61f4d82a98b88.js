@@ -1,0 +1,6 @@
+/*
+ * Copyright Amadeus
+ */
+Aria.classDefinition({$classpath:"aria.core.IOFilter",$constructor:function(a){this.requestDelay=a?a.requestDelay:null;this.responseDelay=a?a.responseDelay:null},$statics:{FILTER_REQ_ERROR:"An error occured in an IO filter:\ncall stack: onRequest\nclass: %1",FILTER_RES_ERROR:"An error occured in an IO filter:\ncall stack: onResponse\nclass: %1"},$prototype:{onRequest:function(a){if(this.requestDelay!=null)a.delay+=this.requestDelay},onResponse:function(a){if(this.responseDelay!=null)a.delay+=this.responseDelay},
+setJsonPostData:function(a,b){a.postData="data="+aria.utils.Json.convertToJsonString(b,{encodeParameters:true})},redirectToFile:function(a,b,c){if(b){a.url=aria.core.DownloadMgr.resolveURL(b,true);if(c!==true)a.url=aria.core.DownloadMgr.getURLWithTimestamp(a.url,true);a.method="GET";a.jsonp=null}},__onRequest:function(a){try{this.onRequest(a)}catch(b){this.$logError(this.FILTER_REQ_ERROR,[this.$classpath],b)}},__onResponse:function(a){try{this.onResponse(a)}catch(b){this.$logError(this.FILTER_RES_ERROR,
+[this.$classpath],b)}}}});

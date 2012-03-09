@@ -1,0 +1,28 @@
+/**
+ * Copyright Amadeus
+ */
+{CSSTemplate {
+	$classpath : 'aria.tester.runner.view.nav.NavCSS',
+	$extends : "aria.tester.runner.view.BaseCSS"
+}}
+
+{macro main()}
+	{var mainColor = "rgb(" + baseColor.r + ","  + baseColor.g + "," + baseColor.b + ")"/}
+	{var r=baseColor.r/}
+	{var g=baseColor.g/}
+	{var b=baseColor.b/}
+	
+	h1 {
+		color : white;
+		font-size:16px;
+		font-weight:normal;
+		background : {call rgb(r,g,b, 0)/};
+		border-top : 2px Solid {call rgb(r,g,b, 20)/};
+		border-bottom : 2px Solid {call rgb(r,g,b, -20)/};
+		height : 22px;
+		text-indent : 10px;
+		padding-top : 4px;
+		margin: 0px;
+	}
+{/macro}
+{/CSSTemplate}

@@ -1,0 +1,6 @@
+/*
+ * Copyright Amadeus
+ */
+Aria.classDefinition({$classpath:"aria.resources.providers.SEPGlobalListProvider",$extends:"aria.resources.providers.BaseProvider",$dependencies:["aria.modules.RequestMgr"],$constructor:function(){this.$BaseProvider.constructor.apply(this,arguments)},$prototype:{__createResourceURL:function(a){for(var b=aria.modules.RequestMgr,c=b.session,d=[],e=0;e<a.length;e++)d.push("RES="+encodeURIComponent(a[e]));a=b.getParam("SITE");a!=null&&d.push("SITE="+encodeURIComponent(a));a=b.getParam("LANGUAGE");a!=
+null&&d.push("LANGUAGE="+encodeURIComponent(a));a=this._handler;if(c.paramName&&c.id)a+=";"+b.session.paramName+"="+b.session.id;a+="?"+d.join("&");return a},__fetchDataCB:function(a,b){this.setJsonData(aria.utils.Json.load(a.responseText));this.$callback(b.callback,b.caller)},_downloadResources:function(a,b,c){if(this._handler!=null&c.length>0){c=this.__createResourceURL(c);aria.core.IO.asyncRequest({url:c,callback:{fn:this.__fetchDataCB,scope:this,args:{callback:a,caller:b}},sender:{classpath:this.$classpath}})}else this.$callback(a,
+b)}}});
