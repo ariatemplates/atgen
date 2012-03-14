@@ -4,7 +4,6 @@
 // module to manage the command line arguments
 var argv = require("optimist")
     .usage('Aria Templates wizard tool')
-	.string("m").alias("m", "module").describe('m', "Project module name")
 	.string("t").alias("t", "template").describe('t', "Create an html template")
 	.boolean("s").alias("s", "script").describe('s', 'Add a template script')
 	.boolean("w").alias("w", "wizard").describe('w', "Run the wizard with params")
@@ -30,7 +29,6 @@ if (argv.h) {
 
 var argvSize = utility.size(argv);
 var noParams = (argv.s == false && argv.b == false && argv.m == null && argvSize == 10);
-//var noParams = (argv.s == false && argv.b == false && argv.m == null && argv.h == false && argv.t == null && argv.l == null && argv.w == null && argv.c == null && argv.i == null && argv.r == null && argv.x == null);
 
 // execute the wizard typing at gen
 if (noParams) {
@@ -39,11 +37,11 @@ if (noParams) {
 	console.log('[Info] To exit press ^C'.info);	
 	wizard.start();
 } else {
-	if (argv.m == null || argv.m == true) {
+	if (argv._ == null || argv._ == "") {
 		console.log('\n[Error] You have to provide the module name.'.err);
 		console.log('[Info] Please check the help using -h or -help.'.info);
 		process.exit(0);
-	} else if (argv.m instanceof Array) {
+	} else if (argv._.length > 1) {
 		console.log('\n[Error] You can provide the module name only once.'.err);
 		console.log('[Info] Please check the help using -h or -help.'.info);
 		process.exit(0);
@@ -56,7 +54,6 @@ if (noParams) {
 		console.log('[Info] Please check the help using -h or -help.'.info);
 		process.exit(0);
 	} else {
-		console.log(argv);
 		paramsMode.execute(argv);
 	}	
 }
