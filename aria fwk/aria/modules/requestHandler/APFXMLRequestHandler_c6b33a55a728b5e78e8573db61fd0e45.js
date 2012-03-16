@@ -1,6 +1,0 @@
-/*
- * Copyright Amadeus
- */
-Aria.classDefinition({$classpath:"aria.modules.requestHandler.APFXMLRequestHandler",$extends:"aria.modules.requestHandler.XMLRequestHandler",$implements:["aria.modules.requestHandler.IRequestHandler"],$dependencies:["aria.utils.Json"],$statics:{JSON_ERROR_ON_FRAMEWORK:"Invalid Framework data have been received in the server response:\n %2",JSON_ERROR_ON_DATA:"Invalid data have been received in the server response:\n %2",JSON_ERROR_ON_ERRORS:"Invalid Errors data have been received in the server response:\n %2"},
-$prototype:{_extractCDATAasJSON:function(h,i){for(var a=h.childNodes,b=a.length,d=0;d<b;d++){var e=a[d];if(e.nodeType===4){a=e.nodeValue;return{data:aria.utils.Json.load(e.nodeValue,this,i),source:a}}}return null},processXMLDocument:function(h,i){for(var a={},b=h.childNodes,d=b.length,e=0;e<d;e++){var f=b[e];if(f.nodeType!==3){var g=f.tagName;if(g=="framework"||g=="data"||g=="errors"){f=this._extractCDATAasJSON(f,this["JSON_ERROR_ON_"+g.toUpperCase()]);a[g]=f.data}}}if(a.framework){b=a.framework.session;
-d=i.session;if(b)for(var c in b)if(b.hasOwnProperty(c))d[c]=b[c]}c={};c.response=a.data;if(a.errors){c.errorData=a.errors;c.error=true}return c}}});
