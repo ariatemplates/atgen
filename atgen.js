@@ -13,6 +13,8 @@ var argv = require("optimist")
 	.string("x").alias("x", "css").describe('x', "Create a css template")
 	.boolean("b").alias("b", "hasBootstrap").describe('b', 'Create the bootstrap')
 	.boolean("h").alias("h", "help").describe('h', 'Show the help guide')
+	.boolean("v").alias("v", "version").describe('v', 'Show the version of the tool and the version of the framework in use')
+	.boolean("g").alias("g", "config").describe('g', 'To edit the configuration file')
     .argv
 ;
 
@@ -23,28 +25,47 @@ var wizard = require("./lib/wizard"),
 	   configHandler = require("./lib/configHandler");
 	   
 // show the help
-if (argv.h) {
+if (argv.h && argv.s == false && argv.b == false && argv.v == false && argv.g == false) {
 	require("optimist").showHelp();
 	process.exit(0);
 }
 
+// show the version
+if (argv.v && argv.s == false && argv.b == false && argv.h == false && argv.g == false) {
+	console.log("\n### atgen version 1.0 ###".file);
+	console.log("framework version in use : " + configHandler.getFrameworkVersionNumber().warn);
+	process.exit(0);
+}
+
+
+
 if (configHandler.checkConfigFile()) {
-	runTool();
+	// configuration mode
+	if (argv.g && argv.s == false && argv.b == false && argv.h == false && argv.v == false) {
+		if (configHandler.checkConfigFile()) {
+			configHandler.editConfigFile();
+		} else {
+			console.log("\n[Error] The configuration file doesn't exist.".err);	
+			process.exit(0);
+		}
+	} else {
+		runTool();
+	}	
 } else {
 	configHandler.createConfigFile();
 }
 
 function runTool() {
 	var argvSize = utility.size(argv);
-	var noParams = (argv.s == false && argv.b == false && argv.m == null && argvSize == 10);
+	var noParams = (argv.s == false && argv.b == false && argv.v == false && argv.g == false && argv.h == false && argv.m == null && argvSize == 14);
 	
-	// enter in wizard mode (typing at gen )
+	// enter in wizard mode (typing at gen)
 	if (noParams) {
 		console.log('\n\n*** Welcome to the Aria Templates wizard ***'.msg);
 		console.log('[Info] To skip a step press Enter'.info);
 		console.log('[Info] To exit press ^C'.info);	
 		wizard.start();
-	} else {	// enter in the Command line mode
+	} else if (argv.g == false && argv.h == false && argv.v == false) {	// enter in the Command line mode
 		if (argv._ == null || argv._ == "") {
 			console.log('\n[Error] You have to provide the module name.'.err);
 			console.log('[Info] Please check the help using -h or -help.'.info);
@@ -64,5 +85,9 @@ function runTool() {
 		} else {
 			paramsMode.execute(argv);
 		}	
+	} else {
+		console.log('\n[Error] Incompatible params.'.err);
+		console.log('[Info] Please check the help using -h or -help.'.info);
+		process.exit(0);
 	}
 };
