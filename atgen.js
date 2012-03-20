@@ -33,7 +33,7 @@ if (argv.h && argv.s == false && argv.b == false && argv.v == false && argv.g ==
 // show the version
 if (argv.v && argv.s == false && argv.b == false && argv.h == false && argv.g == false) {
 	console.log("\n### atgen version 1.0 ###".file);
-	console.log("framework version in use : " + configHandler.getFrameworkVersionNumber().warn);
+	console.log("framework version in use : " + configHandler.getFrameworkVersionNumber().warn + ".js".warn);
 	process.exit(0);
 }
 
