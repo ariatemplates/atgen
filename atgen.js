@@ -25,13 +25,13 @@ var wizard = require("./lib/wizard"),
 	   configHandler = require("./lib/configHandler");
 	   
 // show the help
-if (argv.h && argv.s == false && argv.b == false && argv.v == false && argv.g == false) {
+if (argv.h && argv.s == false && argv.b == false && argv.v == false && argv.g == false && utility.size(argv) == 14) {
 	require("optimist").showHelp();
 	process.exit(0);
 }
 
 // show the version
-if (argv.v && argv.s == false && argv.b == false && argv.h == false && argv.g == false) {
+if (argv.v && argv.s == false && argv.b == false && argv.h == false && argv.g == false && utility.size(argv) == 14) {
 	console.log("\n### atgen version 1.0 ###".file);
 	console.log("framework version in use : " + configHandler.getFrameworkVersionNumber().warn + ".js".warn);
 	process.exit(0);
@@ -41,7 +41,7 @@ if (argv.v && argv.s == false && argv.b == false && argv.h == false && argv.g ==
 
 if (configHandler.checkConfigFile()) {
 	// configuration mode
-	if (argv.g && argv.s == false && argv.b == false && argv.h == false && argv.v == false) {
+	if (argv.g && argv.s == false && argv.b == false && argv.h == false && argv.v == false && utility.size(argv) == 14) {
 		if (configHandler.checkConfigFile()) {
 			configHandler.editConfigFile();
 		} else {
