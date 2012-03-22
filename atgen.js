@@ -18,26 +18,23 @@ var argv = require("optimist")
     .argv
 ;
 
-// module to manage the wizard mode
-var wizard = require("./lib/wizard"),
-	   utility = require("./lib/utility"),
-	   paramsMode = require("./lib/paramsMode"),
-	   configHandler = require("./lib/configHandler");
+var wizard = require("./lib/wizard"),							// module to manage the wizard mode
+	   utility = require("./lib/utility"),								// module to use some utilities
+	   paramsMode = require("./lib/paramsMode"),		// module to manage the command line mode
+	   configHandler = require("./lib/configHandler");		// module to manage the configuration mode
 	   
-// show the help
+// to show the help
 if (argv.h && argv.s == false && argv.b == false && argv.v == false && argv.g == false && utility.size(argv) == 14) {
 	require("optimist").showHelp();
 	process.exit(0);
 }
 
-// show the version
+// to show the tool version and the framework version
 if (argv.v && argv.s == false && argv.b == false && argv.h == false && argv.g == false && utility.size(argv) == 14) {
 	console.log("\n### atgen version 1.0 ###".file);
 	console.log("framework version in use : " + configHandler.getFrameworkVersionNumber().warn + ".js".warn);
 	process.exit(0);
 }
-
-
 
 if (configHandler.checkConfigFile()) {
 	// configuration mode
