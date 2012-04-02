@@ -4,17 +4,17 @@
 // module to manage the command line arguments
 var argv = require("optimist")
     .usage('\n\nAria Templates wizard tool\n\nUsage: atgen [options]')
-	.string("t").alias("t", "template").describe('t', "Create an html template")
-	.boolean("s").alias("s", "script").describe('s', 'Add a template script')
-	.boolean("w").alias("w", "wizard").describe('w', "Run the wizard with params")
-	.string("c").alias("c", "controller").describe('c', "Create a controller")
-	.string("i").alias("i", "interface").describe('i', "Create an interface for the controller created")
-	.string("r").alias("r", "macro").describe('r', "Create a macro library file")
-	.string("x").alias("x", "css").describe('x', "Create a css template")
-	.boolean("b").alias("b", "hasBootstrap").describe('b', 'Create the bootstrap')
+	.string("t").alias("t", "template").describe('t', "Create an html template skeleton file")
+	.boolean("s").alias("s", "script").describe('s', 'Add a template script skeleton file related to the html template')
+	.boolean("w").alias("w", "wizard").describe('w', "Run the tool in interactive mode (wizard) with initial params")
+	.string("c").alias("c", "controller").describe('c', "Create a controller skeleton file")
+	.string("i").alias("i", "interface").describe('i', "Create an interface skeleton file for the controller created")
+	.string("m").alias("m", "macro").describe('m', "Create a macro library skeleton file")
+	.string("x").alias("x", "css").describe('x', "Create a css template skeleton file")
+	.boolean("b").alias("b", "hasBootstrap").describe('b', 'Create the bootstrap skeleton file (index.html)')
 	.boolean("h").alias("h", "help").describe('h', 'Show the help guide')
 	.boolean("v").alias("v", "version").describe('v', 'Show the version of the tool and the version of the framework in use')
-	.boolean("g").alias("g", "config").describe('g', 'To edit the configuration file')
+	.boolean("g").alias("g", "config").describe('g', 'Run the tool in configuration mode to modify the aria templates framework path')
     .argv
 ;
 
@@ -54,7 +54,7 @@ if (configHandler.checkConfigFile()) {
 
 function runTool() {
 	var argvSize = utility.size(argv);
-	var noParams = (argv.s == false && argv.b == false && argv.v == false && argv.g == false && argv.h == false && argv.m == null && argvSize == 14);
+	var noParams = (argv.s == false && argv.b == false && argv.v == false && argv.g == false && argv.h == false && argvSize == 14);
 	
 	// enter in wizard mode (typing at gen)
 	if (noParams) {
@@ -71,11 +71,11 @@ function runTool() {
 			console.log('\n[Error] You can provide the module name only once.'.err);
 			console.log('[Info] Please check the help using -h or -help.'.info);
 			process.exit(0);
-		} else if (argv.t instanceof Array || argv.c instanceof Array || argv.i instanceof Array || argv.r instanceof Array || argv.x instanceof Array) {
+		} else if (argv.t instanceof Array || argv.c instanceof Array || argv.i instanceof Array || argv.m instanceof Array || argv.x instanceof Array) {
 			console.log('\n[Error] Duplicate args not allowed.'.err);
 			console.log('[Info] Please check the help using -h or -help.'.info);
 			process.exit(0);
-		} else if (argv.t == true || argv.c == true || argv.i == true || argv.r == true || argv.x == true) {
+		} else if (argv.t == true || argv.c == true || argv.i == true || argv.m == true || argv.x == true) {
 			console.log('\n[Error] You can\'t use a string argument without specify any content.'.err);
 			console.log('[Info] Please check the help using -h or -help.'.info);
 			process.exit(0);
