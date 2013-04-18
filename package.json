@@ -1,38 +1,40 @@
 {
-	"name" : "atgen",
-    "version" : "v0.1.0",
-    "description" : "Tool to create aria templates projects.",
-    "main" : "./atgen.js",
-    "directories" : {
-        "lib" : "lib"
-    },
-    "dependencies" : {
-        "optimist" : "0.3.1",
-		"colors" : "0.6.0-1",
-		"mkdirp" : "0.3.0",
-		"nconf" : "0.5.1"
-    },
-	"bin" : {
-		"atgen" : "./atgen.js"
-	},
-    "repository" : {
-        "type" : "git",
-        "url" : ""
-    },
-    "keywords" : [
-        "atgen",
-        "aria",
-        "templates"
-    ],
-    "author" : {
-        "name" : "Amadeus - Aria Templates UAS Team",
+  "name": "atgen",
+  "version": "0.1.0",
+  "description": "A command line utility to create an AT project scaffolding",
+  "main": "atgen.js",
+  "dependencies": {
+    "colors": "~0.6.0-1",
+    "mkdirp": "~0.3.0",
+    "nconf": "~0.5.1",
+    "optimist": "~0.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ariatemplates/atgen.git"
+  },
+  "bin" : {
+    "atgen" : "./atgen.js"
+  },
+  "keywords": [
+    "aria",
+    "templates",
+    "generator",
+    "scaffolding",
+    "project",
+    "create",
+    "wizard"
+  ],
+  "preferGlobal" : true,
+   "author" : {
+        "name" : "Aria Templates",
         "email" : "contact@ariatemplates.com",
         "url" : "http://ariatemplates.com"
-    },
-	"preferGlobal" : true,
-	"private" : true,
-    "license" : "",
-    "engine" : {
-        "node" : "0.6.x"
-    }
+   },
+  "license": "Apache",
+  "readmeFilename": "README.md"
 }
