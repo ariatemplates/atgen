@@ -1,4 +1,4 @@
-*** Aria Templates Automatic Tool ***
+# Aria Templates Automatic Tool
 The Aria Templates Automatic Tool is a tool that helps you build fast aria templates projects.
 
 
@@ -8,7 +8,7 @@ The Aria Templates Automatic Tool is a tool that helps you build fast aria templ
 
 ## Features
 
-* Cross platform (Node based)
+* Cross platform (Node based.)
 * Wizard Mode & Single Command Mode.
 * Generates the most significant folders' structure for an aria templates project.
 * Generates the skeletons for all the files that you can create with aria templates.
@@ -20,6 +20,7 @@ The Aria Templates Automatic Tool is a tool that helps you build fast aria templ
 If you run the tool in wizard mode, using the atgen command, the tool will create this structure:
 
 structure:
+<pre>
        --- doc
        --- model
        --- lib
@@ -36,16 +37,15 @@ structure:
         --- IMyController.js
         --- index.html
         --- README-AT.txt
+</pre>
 
-Where:
+- `doc`: project documentation;
+- `model`: data model beans;
+- `lib`: macro library files;
+- `view`: all your templates and template scripts;
+- `style`: all your css templates;
 
-- doc folder = it will be the folder where you will store the documentation of your project;
-- model folder = it will be the folder where you will store your data model;
-- lib folder = it will be the folder where you will store all your macro library files;
-- view folder = it will be the folder where you will store all your templates and template scripts;
-- style folder = it will be the folder where you will store all your css templates;
-
-All the Controller, Interfaces and the bootstrap will be added to the root of your project.
+Controllers, Interfaces and the bootstrap will be added to the root of your project.
 
 
 ### Contributing
