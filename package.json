@@ -1,6 +1,6 @@
 {
   "name": "atgen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A command line utility to create an AT project scaffolding",
   "main": "atgen.js",
   "dependencies": {
